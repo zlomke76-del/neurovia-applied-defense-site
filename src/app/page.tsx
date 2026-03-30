@@ -53,6 +53,33 @@ export default function Home() {
     "Structured for defense and government engagement",
   ];
 
+  const progression = [
+    {
+      id: "01",
+      title: "Operational Context",
+      subtitle: "System in use",
+      image: "/assets/images/image_gas_mask_01.png",
+      alt: "Frontline soldier wearing the gas mask system",
+      desc: "Mission-ready protective equipment shown at the operator level, grounding the platform in real deployment conditions.",
+    },
+    {
+      id: "02",
+      title: "Filter Interface",
+      subtitle: "Protection at the boundary",
+      image: "/assets/images/image_gas_mask_filtration_01.png",
+      alt: "Close-up of the filtration system inside the mask",
+      desc: "A closer look at the mask filtration architecture, where capture, flow, and biological burden reduction begin to matter.",
+    },
+    {
+      id: "03",
+      title: "Internal Filter Layers",
+      subtitle: "Filtration at the materials level",
+      image: "/assets/images/image_gas_mask_filtration_02.png",
+      alt: "Extreme close-up of the internal filter layers",
+      desc: "The progression resolves into the internal filter structure itself, highlighting the material layer where performance actually lives.",
+    },
+  ];
+
   return (
     <main className="min-h-screen bg-[#050807] text-[#f2f6f3] selection:bg-[#9fe3b3]/30">
       <div className="relative overflow-hidden">
@@ -64,7 +91,7 @@ export default function Home() {
             <div className="flex items-center gap-4">
               <div className="relative h-10 w-10 shrink-0 rounded-md border border-white/12 bg-black/40 p-1 shadow-[0_0_20px_rgba(159,227,179,0.15)]">
                 <Image
-                  src="/assets/neurovia_favicon.svg"
+                  src="/assets/images/neurovia_favicon.svg"
                   alt="Neurovia Applied Defense mark"
                   fill
                   className="object-contain p-1"
@@ -182,6 +209,64 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="border-b border-white/12 px-6 py-20">
+          <div className="mx-auto w-full max-w-7xl">
+            <div className="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
+              <div>
+                <div className="text-[11px] uppercase tracking-[0.28em] text-[#9fe3b3]">
+                  System Progression
+                </div>
+                <h3 className="mt-3 max-w-3xl text-2xl font-semibold text-white md:text-4xl">
+                  From operator-level deployment to the filtration layers
+                  themselves.
+                </h3>
+              </div>
+
+              <p className="max-w-xl text-sm leading-7 text-white/62">
+                The visual sequence moves in order from the deployed mask
+                system, to the filter boundary, to the internal filtration
+                structure where material performance becomes the focal point.
+              </p>
+            </div>
+
+            <div className="grid gap-6 xl:grid-cols-3">
+              {progression.map((item, index) => (
+                <article
+                  key={item.id}
+                  className="group overflow-hidden border border-white/15 bg-[linear-gradient(135deg,rgba(159,227,179,0.05),rgba(255,255,255,0.02))] shadow-[inset_0_0_18px_rgba(159,227,179,0.04)]"
+                >
+                  <div className="relative aspect-[4/5] overflow-hidden border-b border-white/12">
+                    <Image
+                      src={item.image}
+                      alt={item.alt}
+                      fill
+                      className="object-cover transition duration-500 group-hover:scale-[1.02]"
+                      sizes="(max-width: 1279px) 100vw, 33vw"
+                    />
+                    <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_top,rgba(5,8,7,0.82),rgba(5,8,7,0.18),rgba(5,8,7,0.02))]" />
+                    <div className="absolute left-4 top-4 inline-flex items-center gap-3 border border-[#9fe3b3]/25 bg-black/35 px-3 py-2 text-[10px] uppercase tracking-[0.22em] text-white/78 backdrop-blur-sm">
+                      <span className="text-[#9fe3b3]">{item.id}</span>
+                      <span>Step {index + 1}</span>
+                    </div>
+                    <div className="absolute bottom-4 left-4 right-4">
+                      <div className="text-[10px] uppercase tracking-[0.24em] text-[#9fe3b3]">
+                        {item.subtitle}
+                      </div>
+                      <div className="mt-2 text-xl font-medium text-white">
+                        {item.title}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="p-5">
+                    <p className="text-sm leading-7 text-white/66">{item.desc}</p>
+                  </div>
+                </article>
+              ))}
             </div>
           </div>
         </section>
@@ -341,7 +426,7 @@ export default function Home() {
             <div className="flex items-center gap-3">
               <div className="relative h-7 w-7 shrink-0">
                 <Image
-                  src="/assets/neurovia_favicon.svg"
+                  src="/assets/images/neurovia_favicon.svg"
                   alt="Neurovia Applied Defense mark"
                   fill
                   className="object-contain"
