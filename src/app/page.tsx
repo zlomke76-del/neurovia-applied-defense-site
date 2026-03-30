@@ -2,52 +2,52 @@ export default function Home() {
   const capabilities = [
     {
       id: "01",
-      title: "Advanced Filtration",
+      title: "Advanced Filtration Systems",
       status: "ACTIVE",
-      desc: "Material systems designed for high-performance filtration in environments where reliability, containment, and repeatability matter.",
+      desc: "High-performance filtration materials designed for containment, reliability, and consistency in operational environments.",
     },
     {
       id: "02",
-      title: "Smart Fiber Integration",
+      title: "Smart Textile Integration",
       status: "INTEGRATED",
-      desc: "Textile-ready architectures capable of supporting embedded sensing, adaptive performance, and next-generation wearable systems.",
+      desc: "Material platforms capable of supporting embedded sensing, adaptive response, and next-generation wearable systems.",
     },
     {
       id: "03",
       title: "Protective Material Systems",
       status: "VERIFIED",
-      desc: "Fiber platforms engineered for resilience, biological resistance, and sustained performance under real-world operating conditions.",
+      desc: "Engineered fibers built for durability, biological resistance, and sustained performance under real-world stress conditions.",
     },
     {
       id: "04",
-      title: "Deployment Assurance",
+      title: "Deployment Readiness",
       status: "MONITORED",
-      desc: "Every system is framed around real deployment conditions, not lab-only outcomes or abstract performance claims.",
+      desc: "Every system is evaluated against real deployment conditions, not just controlled or theoretical environments.",
     },
   ];
 
   const modules = [
     {
       label: "SYSTEM // 01",
-      title: "Built for real deployment conditions",
-      body: "Neurovia Applied Defense focuses on advanced material systems intended for operational environments where stress, contamination, variability, and consequence must be taken seriously.",
+      title: "Built for operational environments",
+      body: "Neurovia Applied Defense focuses on material systems intended for environments where variability, stress, and consequence are inherent to performance.",
     },
     {
       label: "SYSTEM // 02",
-      title: "Performance backed by deployment realism",
-      body: "Capability is not evaluated only by what a material can do under ideal conditions, but by whether it can perform consistently when the environment becomes unstable, variable, or adversarial.",
+      title: "Performance beyond controlled conditions",
+      body: "Capability is defined not only by lab validation, but by how materials behave when exposed to real-world variability and operational constraints.",
     },
     {
       label: "SYSTEM // 03",
-      title: "Procurement-ready positioning",
-      body: "The platform is designed to support serious defense, government, and strategic partnership conversations with clarity, professionalism, and applied credibility.",
+      title: "Aligned for defense and government engagement",
+      body: "Positioned to support serious procurement, defense, and strategic partnership discussions with clarity and applied credibility.",
     },
   ];
 
   const procurement = [
-    "51% Veteran-Owned structure",
-    "Service-disabled veteran eligibility pathway",
-    "Mission-aligned U.S. operating posture",
+    "Veteran-Owned",
+    "Service-disabled eligibility pathway",
+    "U.S.-based operational alignment",
     "Structured for defense and government engagement",
   ];
 
@@ -64,8 +64,8 @@ export default function Home() {
               <div className="text-[11px] uppercase tracking-[0.34em] text-[#9fe3b3]">
                 Neurovia Applied Defense
               </div>
-              <div className="mt-1 text-xs text-white/55">
-                Advanced Material Systems for Real-World Deployment
+              <div className="mt-1 text-xs text-white/60">
+                Mission-Aligned Material Systems
               </div>
             </div>
 
@@ -80,33 +80,28 @@ export default function Home() {
         <section className="relative z-10 border-b border-white/12">
           <div className="mx-auto grid min-h-[calc(100vh-73px)] w-full max-w-7xl items-center gap-14 px-6 py-16 lg:grid-cols-[1.12fr_0.88fr] lg:py-24">
             <div className="max-w-3xl">
-              <div className="mb-6 inline-flex items-center gap-3 border border-[#9fe3b3]/28 bg-white/[0.04] px-4 py-2 text-[11px] uppercase tracking-[0.24em] text-white/72 backdrop-blur-sm">
+              <div className="mb-6 inline-flex items-center gap-3 border border-[#9fe3b3]/28 bg-white/[0.04] px-4 py-2 text-[11px] uppercase tracking-[0.24em] text-white/72">
                 <span className="h-2.5 w-2.5 rounded-full bg-[#9fe3b3] shadow-[0_0_14px_rgba(159,227,179,0.9)]" />
                 System Status / Active
               </div>
 
               <h1 className="text-4xl font-semibold leading-[0.95] text-white md:text-6xl xl:text-7xl">
-                Advanced materials
-                <br />
-                for consequential environments.
+                Mission-ready material systems
               </h1>
 
               <h2 className="mt-4 text-4xl font-semibold leading-[0.95] text-white/75 md:text-6xl xl:text-7xl">
-                Built to perform
-                <br />
-                beyond the lab.
+                built for real-world deployment.
               </h2>
 
-              <p className="mt-8 max-w-2xl text-base leading-8 text-white/68 md:text-lg">
-                Neurovia Applied Defense develops high-performance material
-                systems for defense, medical, filtration, and mission-aligned
-                environments where reliability, adaptability, and deployment
-                realism matter.
+              <p className="mt-8 max-w-2xl text-base leading-8 text-white/70 md:text-lg">
+                Neurovia Applied Defense develops high-performance materials for
+                defense, filtration, medical, and operational environments where
+                reliability and deployment readiness are critical.
               </p>
 
               <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-                <button className="group inline-flex items-center justify-center border border-[#9fe3b3]/50 bg-[#9fe3b3]/18 px-6 py-3 text-sm font-medium uppercase tracking-[0.18em] text-[#f2f6f3] transition hover:border-[#9fe3b3]/75 hover:bg-[#9fe3b3]/28">
-                  Request Access
+                <button className="group inline-flex items-center justify-center border border-[#9fe3b3]/50 bg-[#9fe3b3]/18 px-6 py-3 text-sm uppercase tracking-[0.18em] text-[#f2f6f3] transition hover:border-[#9fe3b3]/75 hover:bg-[#9fe3b3]/28">
+                  Discuss Applications
                   <span className="ml-3 text-[#9fe3b3] transition group-hover:translate-x-0.5">
                     →
                   </span>
@@ -119,7 +114,7 @@ export default function Home() {
 
               <div className="mt-12 grid gap-4 border-t border-white/12 pt-8 sm:grid-cols-2 xl:grid-cols-4">
                 {[
-                  ["OWNERSHIP", "51% VETERAN-OWNED"],
+                  ["OWNERSHIP", "VETERAN-OWNED"],
                   ["FOCUS", "MISSION-ALIGNED"],
                   ["SYSTEMS", "DEPLOYMENT-READY"],
                   ["MODE", "HIGH-PERFORMANCE"],
@@ -146,7 +141,7 @@ export default function Home() {
                 <div className="flex items-center justify-between border-b border-white/12 px-5 py-4">
                   <div>
                     <div className="text-[10px] uppercase tracking-[0.24em] text-[#9fe3b3]">
-                      Command Interface
+                      Operational Overview
                     </div>
                     <div className="mt-1 text-sm text-white/62">
                       Neurovia Applied Defense / System View
@@ -163,10 +158,10 @@ export default function Home() {
                 <div className="grid gap-4 p-5">
                   <div className="grid gap-3 md:grid-cols-2">
                     {[
-                      ["FILTRATION", "ACTIVE"],
-                      ["SMART FIBER", "INTEGRATED"],
-                      ["BIO-RESISTANCE", "VERIFIED"],
-                      ["DEPLOYMENT", "READY"],
+                      ["FILTRATION SYSTEMS", "ACTIVE"],
+                      ["SMART TEXTILES", "INTEGRATED"],
+                      ["PROTECTIVE PERFORMANCE", "VERIFIED"],
+                      ["DEPLOYMENT READINESS", "READY"],
                     ].map(([label, value]) => (
                       <div
                         key={label}
@@ -240,12 +235,12 @@ export default function Home() {
                   Capability Stack
                 </div>
                 <h3 className="mt-3 max-w-2xl text-2xl font-semibold text-white md:text-4xl">
-                  Applied systems with sharper contrast and clearer focus.
+                  Advanced materials built for applied performance.
                 </h3>
               </div>
 
               <p className="max-w-xl text-sm leading-7 text-white/62">
-                The platform should feel advanced, controlled, and high-value
+                The platform should feel advanced, credible, and high-value
                 without over-centering governance language. Capability and
                 deployment should lead.
               </p>
@@ -315,7 +310,7 @@ export default function Home() {
           <div className="mx-auto grid w-full max-w-7xl gap-8 px-6 py-20 lg:grid-cols-[0.9fr_1.1fr]">
             <div>
               <div className="text-[11px] uppercase tracking-[0.28em] text-[#c2a14a]">
-                Procurement Layer
+                Procurement Alignment
               </div>
               <h3 className="mt-3 text-2xl font-semibold text-white md:text-4xl">
                 Structured for serious conversations.
