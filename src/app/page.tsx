@@ -62,12 +62,12 @@ export default function Home() {
         <header className="relative z-10 border-b border-white/12">
           <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-4">
             <div className="flex items-center gap-4">
-              <div className="relative h-11 w-11 shrink-0">
+              <div className="relative h-10 w-10 shrink-0 rounded-md border border-white/12 bg-black/40 p-1 shadow-[0_0_20px_rgba(159,227,179,0.15)]">
                 <Image
-                  src="/assets/neurovia_applied_defense_logo.svg"
-                  alt="Neurovia Applied Defense logo"
+                  src="/assets/neurovia_favicon.svg"
+                  alt="Neurovia Applied Defense mark"
                   fill
-                  className="object-contain"
+                  className="object-contain p-1"
                   priority
                 />
               </div>
@@ -341,7 +341,7 @@ export default function Home() {
             <div className="flex items-center gap-3">
               <div className="relative h-7 w-7 shrink-0">
                 <Image
-                  src="/asset/images/neurovia_favicon.svg"
+                  src="/assets/neurovia_favicon.svg"
                   alt="Neurovia Applied Defense mark"
                   fill
                   className="object-contain"
