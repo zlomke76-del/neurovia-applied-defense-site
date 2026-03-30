@@ -64,7 +64,7 @@ export default function Home() {
             <div className="flex items-center gap-4">
               <div className="relative h-11 w-11 shrink-0">
                 <Image
-                  src="/asset/images/neurovia_applied_defense_logo.svg"
+                  src="/assets/neurovia_applied_defense_logo.svg"
                   alt="Neurovia Applied Defense logo"
                   fill
                   className="object-contain"
