@@ -5,9 +5,9 @@ export const metadata: Metadata = {
   title: "Neurovia Applied Defense",
   description: "Mission-aligned material systems for real-world deployment.",
   icons: {
-    icon: "/asset/images/neurovia_favicon.svg",
-    shortcut: "/asset/images/neurovia_favicon.svg",
-    apple: "/asset/images/neurovia_favicon.svg",
+    icon: "/assets/neurovia_favicon.svg",
+    shortcut: "/assets/neurovia_favicon.svg",
+    apple: "/assets/neurovia_favicon.svg",
   },
 };
 
