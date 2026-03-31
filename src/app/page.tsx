@@ -142,56 +142,56 @@ export default function Home() {
     "Integrated textile systems",
   ];
 
-const bodyCallouts = [
-  {
-    id: "01",
-    label: "Respiratory Protection",
-    detail: "Filtration at the breathing boundary",
-    position:
-      "left-0 top-[20%] w-[34%] md:-left-20 md:w-[30%] xl:-left-28 xl:w-[28%]",
-    align: "items-end text-right",
-  },
-  {
-    id: "02",
-    label: "Interface Zones",
-    detail: "Soft-contact and exposed transition areas",
-    position:
-      "left-0 top-[39%] w-[34%] md:-left-18 md:w-[30%] xl:-left-26 xl:w-[28%]",
-    align: "items-end text-right",
-  },
-  {
-    id: "03",
-    label: "Torso Coverage",
-    detail: "Protective textile layers across the chest and core",
-    position:
-      "right-0 top-[22%] w-[34%] md:-right-20 md:w-[30%] xl:-right-28 xl:w-[28%]",
-    align: "items-start text-left",
-  },
-  {
-    id: "04",
-    label: "Joint Surfaces",
-    detail: "Durability and control across motion-heavy surfaces",
-    position:
-      "right-0 top-[42%] w-[34%] md:-right-18 md:w-[30%] xl:-right-26 xl:w-[28%]",
-    align: "items-start text-left",
-  },
-  {
-    id: "05",
-    label: "Lower-Body Wear",
-    detail: "Extended performance under friction and field exposure",
-    position:
-      "left-0 bottom-[18%] w-[34%] md:-left-20 md:w-[30%] xl:-left-28 xl:w-[28%]",
-    align: "items-end text-right",
-  },
-  {
-    id: "06",
-    label: "System Integration",
-    detail: "Protection logic extended across wearable systems",
-    position:
-      "right-0 bottom-[18%] w-[34%] md:-right-20 md:w-[30%] xl:-right-28 xl:w-[28%]",
-    align: "items-start text-left",
-  },
-];
+  const bodyCallouts = [
+    {
+      id: "01",
+      label: "Respiratory Protection",
+      detail: "Filtration at the breathing boundary",
+      position:
+        "left-0 top-[18%] w-[28%] md:left-2 md:w-[22%] xl:left-4 xl:w-[20%]",
+      align: "items-end text-right",
+    },
+    {
+      id: "02",
+      label: "Interface Zones",
+      detail: "Soft-contact and exposed transition areas",
+      position:
+        "left-0 top-[36%] w-[28%] md:left-3 md:w-[22%] xl:left-5 xl:w-[20%]",
+      align: "items-end text-right",
+    },
+    {
+      id: "03",
+      label: "Torso Coverage",
+      detail: "Protective textile layers across the chest and core",
+      position:
+        "right-0 top-[21%] w-[28%] md:right-2 md:w-[22%] xl:right-4 xl:w-[20%]",
+      align: "items-start text-left",
+    },
+    {
+      id: "04",
+      label: "Joint Surfaces",
+      detail: "Durability and control across motion-heavy surfaces",
+      position:
+        "right-0 top-[39%] w-[28%] md:right-3 md:w-[22%] xl:right-5 xl:w-[20%]",
+      align: "items-start text-left",
+    },
+    {
+      id: "05",
+      label: "Lower-Body Wear",
+      detail: "Extended performance under friction and field exposure",
+      position:
+        "left-0 bottom-[15%] w-[28%] md:left-2 md:w-[22%] xl:left-4 xl:w-[20%]",
+      align: "items-end text-right",
+    },
+    {
+      id: "06",
+      label: "System Integration",
+      detail: "Protection logic extended across wearable systems",
+      position:
+        "right-0 bottom-[15%] w-[28%] md:right-2 md:w-[22%] xl:right-4 xl:w-[20%]",
+      align: "items-start text-left",
+    },
+  ];
 
   return (
     <main className="min-h-screen bg-[#040706] text-[#f2f6f3] selection:bg-[#9fe3b3]/30">
@@ -589,7 +589,7 @@ const bodyCallouts = [
               </p>
             </div>
 
-            <div className="grid gap-6 xl:grid-cols-[0.8fr_1.4fr_0.8fr]">
+            <div className="grid gap-6 xl:grid-cols-[0.82fr_1.36fr_0.82fr]">
               <article className="group relative min-h-[620px] overflow-hidden border border-white/14 bg-[#060b09]">
                 <video
                   className="absolute inset-0 h-full w-full object-cover opacity-70"
@@ -630,7 +630,7 @@ const bodyCallouts = [
                 </div>
               </article>
 
-              <article className="relative overflow-hidden border border-white/24 bg-[#07100d] px-6 py-10">
+              <article className="relative overflow-hidden border border-white/24 bg-[#07100d] px-5 py-10 md:px-8 xl:px-10">
                 <div className="pointer-events-none absolute left-1/2 top-0 h-full w-px -translate-x-1/2 bg-[linear-gradient(to_bottom,transparent,rgba(159,227,179,0.25),transparent)]" />
 
                 <div className="relative z-20 mb-12 text-center">
@@ -642,8 +642,8 @@ const bodyCallouts = [
                   </div>
                 </div>
 
-                <div className="relative mx-auto min-h-[760px] flex items-center justify-center">
-                  <div className="relative w-full max-w-[400px] md:max-w-[420px] xl:max-w-[440px]">
+                <div className="relative mx-auto flex min-h-[760px] items-center justify-center overflow-hidden">
+                  <div className="relative w-full max-w-[250px] md:max-w-[300px] xl:max-w-[340px]">
                     <div className="absolute inset-0 bg-[radial-gradient(circle,rgba(159,227,179,0.16),transparent_65%)] blur-2xl" />
 
                     <Image
@@ -662,7 +662,7 @@ const bodyCallouts = [
                       className={`pointer-events-none absolute z-20 ${item.position} hidden md:block`}
                     >
                       <div className={`relative flex ${item.align}`}>
-                        <div className="pointer-events-auto border border-white/14 bg-black/56 px-4 py-3 backdrop-blur-sm shadow-[0_10px_24px_rgba(0,0,0,0.28)]">
+                        <div className="pointer-events-auto border border-white/14 bg-black/60 px-4 py-3 backdrop-blur-sm shadow-[0_10px_24px_rgba(0,0,0,0.28)]">
                           <div className="text-[10px] uppercase tracking-[0.24em] text-[#9fe3b3]">
                             {item.id}
                           </div>
