@@ -142,56 +142,56 @@ export default function Home() {
     "Integrated textile systems",
   ];
 
-  const bodyCallouts = [
-    {
-      id: "01",
-      label: "Respiratory Protection",
-      detail: "Filtration at the breathing boundary",
-      position:
-        "left-0 top-[22%] w-[34%] md:-left-12 md:w-[28%] xl:-left-20 xl:w-[26%]",
-      align: "items-end text-right",
-    },
-    {
-      id: "02",
-      label: "Interface Zones",
-      detail: "Soft-contact and exposed transition areas",
-      position:
-        "left-0 top-[40%] w-[34%] md:-left-10 md:w-[28%] xl:-left-18 xl:w-[26%]",
-      align: "items-end text-right",
-    },
-    {
-      id: "03",
-      label: "Torso Coverage",
-      detail: "Protective textile layers across the chest and core",
-      position:
-        "right-0 top-[24%] w-[34%] md:-right-12 md:w-[28%] xl:-right-20 xl:w-[26%]",
-      align: "items-start text-left",
-    },
-    {
-      id: "04",
-      label: "Joint Surfaces",
-      detail: "Durability and control across motion-heavy surfaces",
-      position:
-        "right-0 top-[44%] w-[34%] md:-right-10 md:w-[28%] xl:-right-18 xl:w-[26%]",
-      align: "items-start text-left",
-    },
-    {
-      id: "05",
-      label: "Lower-Body Wear",
-      detail: "Extended performance under friction and field exposure",
-      position:
-        "left-0 bottom-[22%] w-[34%] md:-left-12 md:w-[28%] xl:-left-20 xl:w-[26%]",
-      align: "items-end text-right",
-    },
-    {
-      id: "06",
-      label: "System Integration",
-      detail: "Protection logic extended across wearable systems",
-      position:
-        "right-0 bottom-[20%] w-[34%] md:-right-12 md:w-[28%] xl:-right-20 xl:w-[26%]",
-      align: "items-start text-left",
-    },
-  ];
+const bodyCallouts = [
+  {
+    id: "01",
+    label: "Respiratory Protection",
+    detail: "Filtration at the breathing boundary",
+    position:
+      "left-0 top-[20%] w-[34%] md:-left-20 md:w-[30%] xl:-left-28 xl:w-[28%]",
+    align: "items-end text-right",
+  },
+  {
+    id: "02",
+    label: "Interface Zones",
+    detail: "Soft-contact and exposed transition areas",
+    position:
+      "left-0 top-[39%] w-[34%] md:-left-18 md:w-[30%] xl:-left-26 xl:w-[28%]",
+    align: "items-end text-right",
+  },
+  {
+    id: "03",
+    label: "Torso Coverage",
+    detail: "Protective textile layers across the chest and core",
+    position:
+      "right-0 top-[22%] w-[34%] md:-right-20 md:w-[30%] xl:-right-28 xl:w-[28%]",
+    align: "items-start text-left",
+  },
+  {
+    id: "04",
+    label: "Joint Surfaces",
+    detail: "Durability and control across motion-heavy surfaces",
+    position:
+      "right-0 top-[42%] w-[34%] md:-right-18 md:w-[30%] xl:-right-26 xl:w-[28%]",
+    align: "items-start text-left",
+  },
+  {
+    id: "05",
+    label: "Lower-Body Wear",
+    detail: "Extended performance under friction and field exposure",
+    position:
+      "left-0 bottom-[18%] w-[34%] md:-left-20 md:w-[30%] xl:-left-28 xl:w-[28%]",
+    align: "items-end text-right",
+  },
+  {
+    id: "06",
+    label: "System Integration",
+    detail: "Protection logic extended across wearable systems",
+    position:
+      "right-0 bottom-[18%] w-[34%] md:-right-20 md:w-[30%] xl:-right-28 xl:w-[28%]",
+    align: "items-start text-left",
+  },
+];
 
   return (
     <main className="min-h-screen bg-[#040706] text-[#f2f6f3] selection:bg-[#9fe3b3]/30">
@@ -643,7 +643,7 @@ export default function Home() {
                 </div>
 
                 <div className="relative mx-auto min-h-[760px] flex items-center justify-center">
-                  <div className="relative w-full max-w-[460px]">
+                  <div className="relative w-full max-w-[400px] md:max-w-[420px] xl:max-w-[440px]">
                     <div className="absolute inset-0 bg-[radial-gradient(circle,rgba(159,227,179,0.16),transparent_65%)] blur-2xl" />
 
                     <Image
@@ -662,14 +662,14 @@ export default function Home() {
                       className={`pointer-events-none absolute z-20 ${item.position} hidden md:block`}
                     >
                       <div className={`relative flex ${item.align}`}>
-                        <div className="pointer-events-auto border border-white/12 bg-black/40 px-4 py-3 backdrop-blur-sm">
+                        <div className="pointer-events-auto border border-white/14 bg-black/56 px-4 py-3 backdrop-blur-sm shadow-[0_10px_24px_rgba(0,0,0,0.28)]">
                           <div className="text-[10px] uppercase tracking-[0.24em] text-[#9fe3b3]">
                             {item.id}
                           </div>
                           <div className="mt-2 text-sm font-medium text-white">
                             {item.label}
                           </div>
-                          <div className="mt-1 text-xs text-white/60">
+                          <div className="mt-1 text-xs leading-5 text-white/72">
                             {item.detail}
                           </div>
                         </div>
