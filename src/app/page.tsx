@@ -80,6 +80,33 @@ export default function Home() {
     },
   ];
 
+  const battlefield = [
+    {
+      id: "01",
+      title: "Field Stabilization",
+      subtitle: "Uncontrolled environment",
+      image: "/assets/images/image_battlefield_01.png",
+      alt: "Combat medic stabilizing a soldier in the field",
+      desc: "Initial intervention occurs under variable, uncontrolled conditions where stability, cleanliness, and material reliability directly impact outcome.",
+    },
+    {
+      id: "02",
+      title: "Wound Interface",
+      subtitle: "Material-to-skin boundary",
+      image: "/assets/images/image_battlefield_wound_01.png",
+      alt: "Close-up of a sterile dressing contact layer applied to skin",
+      desc: "The contact layer becomes the critical boundary, managing moisture, biological load, and sustained interaction with the wound surface.",
+    },
+    {
+      id: "03",
+      title: "Material Layer",
+      subtitle: "Performance at the fiber level",
+      image: "/assets/images/image_battlefield_fiber_01.png",
+      alt: "Macro view of advanced fiber structure used in wound care",
+      desc: "Performance resolves at the fiber structure itself, where consistency, control, and material behavior determine real-world effectiveness.",
+    },
+  ];
+
   return (
     <main className="min-h-screen bg-[#050807] text-[#f2f6f3] selection:bg-[#9fe3b3]/30">
       <div className="relative overflow-hidden">
@@ -235,6 +262,64 @@ export default function Home() {
 
             <div className="grid gap-6 xl:grid-cols-3">
               {progression.map((item, index) => (
+                <article
+                  key={item.id}
+                  className="group overflow-hidden border border-white/15 bg-[linear-gradient(135deg,rgba(159,227,179,0.05),rgba(255,255,255,0.02))] shadow-[inset_0_0_18px_rgba(159,227,179,0.04)]"
+                >
+                  <div className="relative aspect-[4/5] overflow-hidden border-b border-white/12">
+                    <Image
+                      src={item.image}
+                      alt={item.alt}
+                      fill
+                      className="object-cover transition duration-500 group-hover:scale-[1.02]"
+                      sizes="(max-width: 1279px) 100vw, 33vw"
+                    />
+                    <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_top,rgba(5,8,7,0.82),rgba(5,8,7,0.18),rgba(5,8,7,0.02))]" />
+                    <div className="absolute left-4 top-4 inline-flex items-center gap-3 border border-[#9fe3b3]/25 bg-black/35 px-3 py-2 text-[10px] uppercase tracking-[0.22em] text-white/78 backdrop-blur-sm">
+                      <span className="text-[#9fe3b3]">{item.id}</span>
+                      <span>Step {index + 1}</span>
+                    </div>
+                    <div className="absolute bottom-4 left-4 right-4">
+                      <div className="text-[10px] uppercase tracking-[0.24em] text-[#9fe3b3]">
+                        {item.subtitle}
+                      </div>
+                      <div className="mt-2 text-xl font-medium text-white">
+                        {item.title}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="p-5">
+                    <p className="text-sm leading-7 text-white/66">{item.desc}</p>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="border-b border-white/12 px-6 py-20">
+          <div className="mx-auto w-full max-w-7xl">
+            <div className="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
+              <div>
+                <div className="text-[11px] uppercase tracking-[0.28em] text-[#9fe3b3]">
+                  Battlefield Progression
+                </div>
+                <h3 className="mt-3 max-w-3xl text-2xl font-semibold text-white md:text-4xl">
+                  From field stabilization to the material layer itself.
+                </h3>
+              </div>
+
+              <p className="max-w-xl text-sm leading-7 text-white/62">
+                The sequence follows real-world intervention, moving from
+                uncontrolled field conditions, to the wound interface, and
+                ultimately to the material layer where performance determines
+                outcome under biological and environmental stress.
+              </p>
+            </div>
+
+            <div className="grid gap-6 xl:grid-cols-3">
+              {battlefield.map((item, index) => (
                 <article
                   key={item.id}
                   className="group overflow-hidden border border-white/15 bg-[linear-gradient(135deg,rgba(159,227,179,0.05),rgba(255,255,255,0.02))] shadow-[inset_0_0_18px_rgba(159,227,179,0.04)]"
