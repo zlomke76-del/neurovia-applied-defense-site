@@ -285,7 +285,7 @@ export default function Home() {
 
               <div className="mt-10 flex flex-col gap-4 sm:flex-row">
                 <a
-                  href="mailto:charlier@neuroviaapplieddefense.com,timz@neuroviadynamics.com?subject=Neurovia Applied Defense Inquiry&body=Please include:%0A- Organization%0A- Application area%0A- Timeline%0A"
+                  href="mailto:charlier@neuroviaapplieddefense.com,timz@neuroviadynamics.com?subject=Neurovia Applied Defense Inquiry&body=Please include:%0A%0A- Organization:%0A- Application area:%0A- Timeline:%0A- Point of contact:%0A"
                   className="group inline-flex items-center justify-center border border-[#9fe3b3]/52 bg-[#9fe3b3]/16 px-6 py-3 text-sm uppercase tracking-[0.18em] text-[#f2f6f3] transition hover:bg-[#9fe3b3]/24"
                 >
                   Discuss Applications →
