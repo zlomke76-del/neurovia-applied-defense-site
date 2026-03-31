@@ -117,6 +117,39 @@ export default function Home() {
     },
   ];
 
+
+
+  const maritime = [
+    {
+      id: "01",
+      title: "Shipboard Environment",
+      subtitle: "Confined Maritime Operations",
+      video: "/assets/video/video_battleship_01.mp4",
+      poster: "/assets/images/image_battleship_ppe_01.png",
+      alt: "Battleship operating environment with PhantomFiber maritime deployment context",
+      desc: "Shipboard environments compress moisture exposure, repeated surface contact, and sustained operational readiness into a single controlled but high-consequence setting.",
+      accent: "standard",
+    },
+    {
+      id: "02",
+      title: "Clinical Control",
+      subtitle: "Shipboard Medical Interface",
+      image: "/assets/images/image_battleship_clinic_01.png",
+      alt: "PhantomFiber antibacterial clinical application inside a battleship medical environment",
+      desc: "Antibacterial material performance supports cleaner intervention conditions in shipboard medical spaces where contamination control and disciplined handling matter continuously.",
+      accent: "focus",
+    },
+    {
+      id: "03",
+      title: "Maritime PPE Systems",
+      subtitle: "Wearable Protection Layer",
+      image: "/assets/images/image_battleship_ppe_01.png",
+      alt: "Maritime PPE system highlighting PhantomFiber material integration",
+      desc: "Protective textile systems extend into maritime PPE where repeat use, environmental durability, and exposure management must persist across operational cycles.",
+      accent: "standard",
+    },
+  ];
+
   const heroSignals = [
     "Filtration",
     "Wound Care",
@@ -495,6 +528,99 @@ export default function Home() {
 
                     <div className="absolute bottom-4 left-4 right-4">
                       <div className="text-[10px] uppercase tracking-[0.24em] text-[#9fe3b3]">
+                        {item.subtitle}
+                      </div>
+                      <div className="mt-2 text-xl font-medium text-white">
+                        {item.title}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="p-5">
+                    <p className="text-sm leading-7 text-white/66">
+                      {item.desc}
+                    </p>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+
+        <section className="relative border-b border-white/12 px-6 py-20">
+          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(110,156,214,0.12),transparent_38%),radial-gradient(circle_at_80%_18%,rgba(78,113,168,0.12),transparent_28%)]" />
+          <div className="pointer-events-none absolute inset-y-0 left-1/2 hidden w-px -translate-x-1/2 bg-[linear-gradient(to_bottom,transparent,rgba(126,170,225,0.18),transparent)] xl:block" />
+          <div className="mx-auto w-full max-w-7xl">
+            <div className="mb-4 text-[10px] uppercase tracking-[0.3em] text-white/38">
+              Applied Across Maritime Operations
+            </div>
+
+            <div className="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
+              <div>
+                <div className="text-[11px] uppercase tracking-[0.28em] text-[#8ebcff]">
+                  Maritime Deployment Progression
+                </div>
+                <h3 className="mt-3 max-w-3xl text-2xl font-semibold text-white md:text-4xl">
+                  Same material logic. Shipboard operational conditions.
+                </h3>
+              </div>
+
+              <p className="max-w-xl text-sm leading-7 text-white/62 md:translate-y-2">
+                The sequence follows maritime deployment from shipboard environment,
+                to clinical control, to wearable protection systems where hygiene,
+                moisture, repeated contact, and operational readiness must hold together.
+              </p>
+            </div>
+
+            <div className="relative grid gap-6 xl:grid-cols-3">
+              {maritime.map((item, index) => (
+                <article
+                  key={item.id}
+                  className={`group relative overflow-hidden border ${
+                    item.accent === "focus"
+                      ? "border-[#8ebcff]/24 bg-[linear-gradient(135deg,rgba(98,138,196,0.12),rgba(255,255,255,0.03))]"
+                      : "border-white/16 bg-[linear-gradient(135deg,rgba(78,113,168,0.08),rgba(255,255,255,0.018))]"
+                  } shadow-[inset_0_0_0_1px_rgba(255,255,255,0.02)] ${
+                    index === 1 ? "xl:-translate-y-3" : ""
+                  }`}
+                >
+                  <div className="relative aspect-[4/5] overflow-hidden border-b border-white/12">
+                    {"video" in item ? (
+                      <video
+                        className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.02]"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        preload="auto"
+                        poster={item.poster}
+                      >
+                        <source src={item.video} type="video/mp4" />
+                      </video>
+                    ) : (
+                      <Image
+                        src={item.image}
+                        alt={item.alt}
+                        fill
+                        className="object-cover transition duration-500 group-hover:scale-[1.02]"
+                        sizes="(max-width: 1279px) 100vw, 33vw"
+                      />
+                    )}
+                    <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_top,rgba(4,7,12,0.92),rgba(6,12,22,0.34),rgba(4,7,12,0.04))]" />
+                    <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(135deg,rgba(142,188,255,0.08),transparent_40%,rgba(255,255,255,0.03))]" />
+
+                    <div className="absolute left-4 top-4 inline-flex items-center gap-3 border border-[#8ebcff]/22 bg-black/42 px-3 py-2 text-[10px] uppercase tracking-[0.22em] text-white/78 backdrop-blur-sm">
+                      <span className="text-[#8ebcff]">{item.id}</span>
+                      <span>Step {index + 1}</span>
+                    </div>
+
+                    <div className="absolute right-4 top-5 hidden xl:block">
+                      <span className="block h-2.5 w-2.5 rounded-full bg-[#8ebcff]/90 shadow-[0_0_12px_rgba(142,188,255,0.72)]" />
+                    </div>
+
+                    <div className="absolute bottom-4 left-4 right-4">
+                      <div className="text-[10px] uppercase tracking-[0.24em] text-[#8ebcff]">
                         {item.subtitle}
                       </div>
                       <div className="mt-2 text-xl font-medium text-white">
