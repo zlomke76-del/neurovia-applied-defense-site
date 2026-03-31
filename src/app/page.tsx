@@ -691,14 +691,15 @@ export default function Home() {
                         <Image
                           src="/assets/images/image_soldier_back_full_01.png"
                           alt="Full-body soldier view for PhantomFiber protection mapping"
-        width={640}
-        height={1400}
-        className="mx-auto h-auto w-full object-contain drop-shadow-[0_24px_40px_rgba(0,0,0,0.45)]"
-        priority
-      />
-    </div>
-  </div>
-</div>
+                          width={640}
+                          height={1400}
+                          className="mx-auto h-auto w-full object-contain drop-shadow-[0_24px_40px_rgba(0,0,0,0.45)]"
+                          priority
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
                 <div className="mt-8 grid gap-3 md:hidden">
                   {bodyCallouts.map((item) => (
