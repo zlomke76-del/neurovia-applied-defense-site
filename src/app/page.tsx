@@ -117,17 +117,14 @@ export default function Home() {
     },
   ];
 
-
-
   const maritime = [
     {
       id: "01",
       title: "Shipboard Environment",
       subtitle: "Confined Maritime Operations",
       video: "/assets/video/video_battleship_01.mp4",
-      poster: "/assets/images/image_battleship_ppe_01.png",
-      alt: "Battleship operating environment with PhantomFiber maritime deployment context",
-      desc: "Shipboard environments compress moisture exposure, repeated surface contact, and sustained operational readiness into a single controlled but high-consequence setting.",
+      alt: "Battleship deck and shipboard operational environment",
+      desc: "Maritime deployment environments introduce confined spaces, persistent moisture, and repeated surface exposure across shipboard systems.",
       accent: "standard",
     },
     {
@@ -135,8 +132,8 @@ export default function Home() {
       title: "Clinical Control",
       subtitle: "Shipboard Medical Interface",
       image: "/assets/images/image_battleship_clinic_01.png",
-      alt: "PhantomFiber antibacterial clinical application inside a battleship medical environment",
-      desc: "Antibacterial material performance supports cleaner intervention conditions in shipboard medical spaces where contamination control and disciplined handling matter continuously.",
+      alt: "Clinical treatment on a battleship highlighting antibacterial material use",
+      desc: "Antibacterial material performance supports cleaner intervention conditions in shipboard medical environments where contamination control is critical.",
       accent: "focus",
     },
     {
@@ -144,8 +141,8 @@ export default function Home() {
       title: "Maritime PPE Systems",
       subtitle: "Wearable Protection Layer",
       image: "/assets/images/image_battleship_ppe_01.png",
-      alt: "Maritime PPE system highlighting PhantomFiber material integration",
-      desc: "Protective textile systems extend into maritime PPE where repeat use, environmental durability, and exposure management must persist across operational cycles.",
+      alt: "Maritime PPE use in demanding shipboard conditions",
+      desc: "Protective textile systems extend into maritime PPE where repeat use, exposure control, and durable wear performance must persist across operations.",
       accent: "standard",
     },
   ];
@@ -186,15 +183,30 @@ export default function Home() {
     },
     {
       id: "02",
+      label: "Interface Zones",
+      detail: "Soft-contact and exposed transition areas",
+      position:
+        "left-0 top-[36%] w-[28%] md:left-3 md:w-[22%] xl:left-5 xl:w-[20%]",
+      align: "items-end text-right",
+    },
+    {
+      id: "03",
       label: "Torso Coverage",
       detail: "Protective textile layers across the chest and core",
       position:
         "right-0 top-[21%] w-[28%] md:right-2 md:w-[22%] xl:right-4 xl:w-[20%]",
       align: "items-start text-left",
     },
-    
     {
-      id: "03",
+      id: "04",
+      label: "Joint Surfaces",
+      detail: "Durability and control across motion-heavy surfaces",
+      position:
+        "right-0 top-[39%] w-[28%] md:right-3 md:w-[22%] xl:right-5 xl:w-[20%]",
+      align: "items-start text-left",
+    },
+    {
+      id: "05",
       label: "Lower-Body Wear",
       detail: "Extended performance under friction and field exposure",
       position:
@@ -202,7 +214,7 @@ export default function Home() {
       align: "items-end text-right",
     },
     {
-      id: "04",
+      id: "06",
       label: "System Integration",
       detail: "Protection logic extended across wearable systems",
       position:
@@ -272,9 +284,12 @@ export default function Home() {
               </p>
 
               <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-                <button className="group inline-flex items-center justify-center border border-[#9fe3b3]/52 bg-[#9fe3b3]/16 px-6 py-3 text-sm uppercase tracking-[0.18em] text-[#f2f6f3] transition hover:bg-[#9fe3b3]/24">
+                <a
+                  href="mailto:charlier@neuroviaapplieddefense.com,timz@neuroviadynamics.com?subject=Neurovia Applied Defense Inquiry&body=Please include:%0A- Organization%0A- Application area%0A- Timeline%0A"
+                  className="group inline-flex items-center justify-center border border-[#9fe3b3]/52 bg-[#9fe3b3]/16 px-6 py-3 text-sm uppercase tracking-[0.18em] text-[#f2f6f3] transition hover:bg-[#9fe3b3]/24"
+                >
                   Discuss Applications →
-                </button>
+                </a>
 
                 <button className="inline-flex items-center justify-center border border-white/18 bg-white/[0.03] px-6 py-3 text-sm uppercase tracking-[0.18em] text-white/82 transition hover:border-white/28 hover:bg-white/[0.05]">
                   Learn More
@@ -532,10 +547,9 @@ export default function Home() {
           </div>
         </section>
 
-
         <section className="relative border-b border-white/12 px-6 py-20">
-          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(110,156,214,0.12),transparent_38%),radial-gradient(circle_at_80%_18%,rgba(78,113,168,0.12),transparent_28%)]" />
-          <div className="pointer-events-none absolute inset-y-0 left-1/2 hidden w-px -translate-x-1/2 bg-[linear-gradient(to_bottom,transparent,rgba(126,170,225,0.18),transparent)] xl:block" />
+          <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(36,73,102,0.1),transparent_32%,transparent_68%,rgba(36,73,102,0.08))]" />
+          <div className="pointer-events-none absolute inset-y-0 left-1/2 hidden w-px -translate-x-1/2 bg-[linear-gradient(to_bottom,transparent,rgba(124,178,214,0.16),transparent)] xl:block" />
           <div className="mx-auto w-full max-w-7xl">
             <div className="mb-4 text-[10px] uppercase tracking-[0.3em] text-white/38">
               Applied Across Maritime Operations
@@ -543,7 +557,7 @@ export default function Home() {
 
             <div className="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
               <div>
-                <div className="text-[11px] uppercase tracking-[0.28em] text-[#8ebcff]">
+                <div className="text-[11px] uppercase tracking-[0.28em] text-[#8cc7f2]">
                   Maritime Deployment Progression
                 </div>
                 <h3 className="mt-3 max-w-3xl text-2xl font-semibold text-white md:text-4xl">
@@ -554,7 +568,7 @@ export default function Home() {
               <p className="max-w-xl text-sm leading-7 text-white/62 md:translate-y-2">
                 The sequence follows maritime deployment from shipboard environment,
                 to clinical control, to wearable protection systems where hygiene,
-                moisture, repeated contact, and operational readiness must hold together.
+                moisture exposure, repeat contact, and sustained readiness must hold together.
               </p>
             </div>
 
@@ -564,8 +578,8 @@ export default function Home() {
                   key={item.id}
                   className={`group relative overflow-hidden border ${
                     item.accent === "focus"
-                      ? "border-[#8ebcff]/24 bg-[linear-gradient(135deg,rgba(98,138,196,0.12),rgba(255,255,255,0.03))]"
-                      : "border-white/16 bg-[linear-gradient(135deg,rgba(78,113,168,0.08),rgba(255,255,255,0.018))]"
+                      ? "border-[#8cc7f2]/28 bg-[linear-gradient(135deg,rgba(86,132,171,0.14),rgba(255,255,255,0.03))]"
+                      : "border-white/16 bg-[linear-gradient(135deg,rgba(56,88,120,0.12),rgba(255,255,255,0.018))]"
                   } shadow-[inset_0_0_0_1px_rgba(255,255,255,0.02)] ${
                     index === 1 ? "xl:-translate-y-3" : ""
                   }`}
@@ -579,7 +593,6 @@ export default function Home() {
                         loop
                         playsInline
                         preload="auto"
-                        poster={item.poster}
                       >
                         <source src={item.video} type="video/mp4" />
                       </video>
@@ -592,20 +605,19 @@ export default function Home() {
                         sizes="(max-width: 1279px) 100vw, 33vw"
                       />
                     )}
-                    <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_top,rgba(4,7,12,0.92),rgba(6,12,22,0.34),rgba(4,7,12,0.04))]" />
-                    <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(135deg,rgba(142,188,255,0.08),transparent_40%,rgba(255,255,255,0.03))]" />
+                    <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_top,rgba(4,7,10,0.9),rgba(4,7,10,0.26),rgba(4,7,10,0.04))]" />
 
-                    <div className="absolute left-4 top-4 inline-flex items-center gap-3 border border-[#8ebcff]/22 bg-black/42 px-3 py-2 text-[10px] uppercase tracking-[0.22em] text-white/78 backdrop-blur-sm">
-                      <span className="text-[#8ebcff]">{item.id}</span>
+                    <div className="absolute left-4 top-4 inline-flex items-center gap-3 border border-[#8cc7f2]/24 bg-black/42 px-3 py-2 text-[10px] uppercase tracking-[0.22em] text-white/82 backdrop-blur-sm">
+                      <span className="text-[#8cc7f2]">{item.id}</span>
                       <span>Step {index + 1}</span>
                     </div>
 
                     <div className="absolute right-4 top-5 hidden xl:block">
-                      <span className="block h-2.5 w-2.5 rounded-full bg-[#8ebcff]/90 shadow-[0_0_12px_rgba(142,188,255,0.72)]" />
+                      <span className="block h-2.5 w-2.5 rounded-full bg-[#8cc7f2]/90 shadow-[0_0_12px_rgba(140,199,242,0.72)]" />
                     </div>
 
                     <div className="absolute bottom-4 left-4 right-4">
-                      <div className="text-[10px] uppercase tracking-[0.24em] text-[#8ebcff]">
+                      <div className="text-[10px] uppercase tracking-[0.24em] text-[#8cc7f2]">
                         {item.subtitle}
                       </div>
                       <div className="mt-2 text-xl font-medium text-white">
@@ -862,7 +874,9 @@ export default function Home() {
                 Advanced materials, real deployment, disciplined presentation.
               </h3>
               <p className="mt-6 max-w-xl text-sm leading-7 text-white/62">
-                
+                The platform should communicate material seriousness with the
+                restraint of an engineered system, not the tone of speculative
+                marketing.
               </p>
             </div>
 
@@ -974,13 +988,16 @@ export default function Home() {
                     href="mailto:charlier@neuroviaapplieddefense.com,timz@neuroviadynamics.com?subject=Neurovia Applied Defense Inquiry&body=Please include:%0A- Organization%0A- Application area%0A- Timeline%0A"
                     className="inline-flex items-center justify-center border border-[#9fe3b3]/46 bg-[#9fe3b3]/16 px-7 py-3 text-sm uppercase tracking-[0.18em] text-[#f2f6f3] transition hover:border-[#9fe3b3]/68 hover:bg-[#9fe3b3]/24"
                   >
-                    Initiate Discussion →
+                    Initiate Discussion
                   </a>
-
                   <button className="inline-flex items-center justify-center border border-white/18 bg-white/[0.04] px-7 py-3 text-sm uppercase tracking-[0.18em] text-white/84 transition hover:border-white/32 hover:text-white">
                     View System Brief
                   </button>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <footer className="border-t border-white/12">
           <div className="mx-auto flex w-full max-w-7xl flex-col gap-3 px-6 py-6 text-xs text-white/42 md:flex-row md:items-center md:justify-between">
