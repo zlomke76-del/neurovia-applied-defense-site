@@ -181,16 +181,8 @@ export default function Home() {
         "left-0 top-[18%] w-[28%] md:left-2 md:w-[22%] xl:left-4 xl:w-[20%]",
       align: "items-end text-right",
     },
-    {
+   {
       id: "02",
-      label: "Interface Zones",
-      detail: "Soft-contact and exposed transition areas",
-      position:
-        "left-0 top-[36%] w-[28%] md:left-3 md:w-[22%] xl:left-5 xl:w-[20%]",
-      align: "items-end text-right",
-    },
-    {
-      id: "03",
       label: "Torso Coverage",
       detail: "Protective textile layers across the chest and core",
       position:
@@ -198,15 +190,7 @@ export default function Home() {
       align: "items-start text-left",
     },
     {
-      id: "04",
-      label: "Joint Surfaces",
-      detail: "Durability and control across motion-heavy surfaces",
-      position:
-        "right-0 top-[39%] w-[28%] md:right-3 md:w-[22%] xl:right-5 xl:w-[20%]",
-      align: "items-start text-left",
-    },
-    {
-      id: "05",
+      id: "03",
       label: "Lower-Body Wear",
       detail: "Extended performance under friction and field exposure",
       position:
@@ -214,7 +198,7 @@ export default function Home() {
       align: "items-end text-right",
     },
     {
-      id: "06",
+      id: "04",
       label: "System Integration",
       detail: "Protection logic extended across wearable systems",
       position:
