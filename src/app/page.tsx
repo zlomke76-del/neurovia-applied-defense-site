@@ -649,7 +649,7 @@ export default function Home() {
                 <div className="pointer-events-none absolute inset-x-0 top-[14%] h-px bg-[linear-gradient(to_right,transparent,rgba(159,227,179,0.08),transparent)]" />
                 <div className="pointer-events-none absolute inset-x-0 bottom-[14%] h-px bg-[linear-gradient(to_right,transparent,rgba(159,227,179,0.08),transparent)]" />
 
-                <div className="mb-8 text-center">
+                <div className="relative z-20 mb-12 text-center">
                   <div className="text-[10px] uppercase tracking-[0.3em] text-[#9fe3b3]">
                     Full-Body Protection View
                   </div>
@@ -660,11 +660,11 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="relative mx-auto flex min-h-[760px] w-full max-w-[760px] items-center justify-center">
+                <div className="relative mx-auto min-h-[760px] w-full max-w-[760px]">
                   {bodyCallouts.map((item) => (
                     <div
                       key={item.id}
-                      className={`absolute ${item.position} hidden md:block`}
+                      className={`absolute z-20 ${item.position} hidden md:block`}
                     >
                       <div
                         className={`relative flex ${item.align} after:absolute after:h-px after:bg-[#9fe3b3]/34 ${item.line}`}
@@ -684,20 +684,21 @@ export default function Home() {
                     </div>
                   ))}
 
-                  <div className="relative z-10 w-full max-w-[360px] md:max-w-[440px] xl:max-w-[500px]">
-                    <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle,rgba(159,227,179,0.12),transparent_62%)] blur-2xl" />
-                    <div className="relative">
-                      <Image
-                        src="/assets/images/image_soldier_back_full_01.png"
-                        alt="Full-body soldier view for PhantomFiber protection mapping"
-                        width={640}
-                        height={1400}
-                        className="mx-auto h-auto w-full object-contain drop-shadow-[0_24px_40px_rgba(0,0,0,0.45)]"
-                        priority
-                      />
-                    </div>
-                  </div>
-                </div>
+                  <div className="relative z-10 mx-auto flex min-h-[760px] items-center justify-center pt-24 pb-20">
+                    <div className="relative w-full max-w-[360px] md:max-w-[440px] xl:max-w-[500px]">
+                      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle,rgba(159,227,179,0.12),transparent_62%)] blur-2xl" />
+                      <div className="relative">
+                        <Image
+                          src="/assets/images/image_soldier_back_full_01.png"
+                          alt="Full-body soldier view for PhantomFiber protection mapping"
+        width={640}
+        height={1400}
+        className="mx-auto h-auto w-full object-contain drop-shadow-[0_24px_40px_rgba(0,0,0,0.45)]"
+        priority
+      />
+    </div>
+  </div>
+</div>
 
                 <div className="mt-8 grid gap-3 md:hidden">
                   {bodyCallouts.map((item) => (
