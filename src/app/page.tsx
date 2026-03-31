@@ -877,9 +877,7 @@ export default function Home() {
                 Advanced materials, real deployment, disciplined presentation.
               </h3>
               <p className="mt-6 max-w-xl text-sm leading-7 text-white/62">
-                The platform should communicate material seriousness with the
-                restraint of an engineered system, not the tone of speculative
-                marketing.
+                
               </p>
             </div>
 
