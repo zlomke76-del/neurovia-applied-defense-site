@@ -131,15 +131,15 @@ export default function Home() {
   ];
 
   const leftProtectionPoints = [
-    "Respiratory filtration and airborne burden reduction",
-    "Face, neck, and exposed boundary protection",
-    "Material durability under field abrasion and stress",
+    "Respiratory filtration",
+    "Face + boundary protection",
+    "Material durability under stress",
   ];
 
   const rightProtectionPoints = [
-    "Wound-contact cleanliness and biological load control",
-    "Moisture management across sustained wear surfaces",
-    "Integrated textile protection across operational gear",
+    "Wound-contact control",
+    "Moisture + wear management",
+    "Integrated textile systems",
   ];
 
   const bodyCallouts = [
@@ -148,54 +148,48 @@ export default function Home() {
       label: "Respiratory Protection",
       detail: "Filtration at the breathing boundary",
       position:
-        "left-0 top-[12%] w-[42%] md:-left-4 md:w-[36%] xl:-left-10 xl:w-[34%]",
+        "left-0 top-[22%] w-[34%] md:-left-12 md:w-[28%] xl:-left-20 xl:w-[26%]",
       align: "items-end text-right",
-      line: "after:right-[-2.2rem] after:top-1/2 after:w-8 after:-translate-y-1/2",
     },
     {
       id: "02",
-      label: "Neck + Interface Zones",
+      label: "Interface Zones",
       detail: "Soft-contact and exposed transition areas",
       position:
-        "left-0 top-[30%] w-[42%] md:-left-3 md:w-[34%] xl:-left-8 xl:w-[32%]",
+        "left-0 top-[40%] w-[34%] md:-left-10 md:w-[28%] xl:-left-18 xl:w-[26%]",
       align: "items-end text-right",
-      line: "after:right-[-1.8rem] after:top-1/2 after:w-7 after:-translate-y-1/2",
     },
     {
       id: "03",
       label: "Torso Coverage",
       detail: "Protective textile layers across the chest and core",
       position:
-        "right-0 top-[18%] w-[42%] md:-right-4 md:w-[36%] xl:-right-10 xl:w-[34%]",
+        "right-0 top-[24%] w-[34%] md:-right-12 md:w-[28%] xl:-right-20 xl:w-[26%]",
       align: "items-start text-left",
-      line: "after:left-[-2.2rem] after:top-1/2 after:w-8 after:-translate-y-1/2",
     },
     {
       id: "04",
-      label: "Arm + Joint Contact",
+      label: "Joint Surfaces",
       detail: "Durability and control across motion-heavy surfaces",
       position:
-        "right-0 top-[40%] w-[42%] md:-right-3 md:w-[34%] xl:-right-8 xl:w-[32%]",
+        "right-0 top-[44%] w-[34%] md:-right-10 md:w-[28%] xl:-right-18 xl:w-[26%]",
       align: "items-start text-left",
-      line: "after:left-[-1.8rem] after:top-1/2 after:w-7 after:-translate-y-1/2",
     },
     {
       id: "05",
-      label: "Lower-Body Wear Surfaces",
+      label: "Lower-Body Wear",
       detail: "Extended performance under friction and field exposure",
       position:
-        "left-0 bottom-[16%] w-[44%] md:-left-4 md:w-[36%] xl:-left-10 xl:w-[34%]",
+        "left-0 bottom-[22%] w-[34%] md:-left-12 md:w-[28%] xl:-left-20 xl:w-[26%]",
       align: "items-end text-right",
-      line: "after:right-[-2.2rem] after:top-1/2 after:w-8 after:-translate-y-1/2",
     },
     {
       id: "06",
-      label: "Mission-Wide Integration",
+      label: "System Integration",
       detail: "Protection logic extended across wearable systems",
       position:
-        "right-0 bottom-[12%] w-[44%] md:-right-4 md:w-[36%] xl:-right-10 xl:w-[34%]",
+        "right-0 bottom-[20%] w-[34%] md:-right-12 md:w-[28%] xl:-right-20 xl:w-[26%]",
       align: "items-start text-left",
-      line: "after:left-[-2.2rem] after:top-1/2 after:w-8 after:-translate-y-1/2",
     },
   ];
 
@@ -583,23 +577,22 @@ export default function Home() {
                   Protection Mapping
                 </div>
                 <h3 className="mt-3 max-w-3xl text-2xl font-semibold text-white md:text-4xl">
-                  PhantomFiber protection extends across the operator, not just
-                  a single point of contact.
+                  PhantomFiber protection extends across the operator, not a
+                  single boundary.
                 </h3>
               </div>
 
-              <p className="max-w-xl text-sm leading-7 text-white/62">
-                This section maps the protective effect across respiratory
-                boundaries, textile wear surfaces, wound-contact zones, and
-                other operational interfaces where material behavior determines
-                survivability, cleanliness, and sustained performance.
+              <p className="max-w-xl text-sm leading-7 text-white/58">
+                Protection resolves across respiratory, textile, wound-contact,
+                and wear-interface zones—where material behavior determines
+                survivability and sustained performance.
               </p>
             </div>
 
-            <div className="grid gap-6 xl:grid-cols-[0.88fr_1.24fr_0.88fr]">
-              <article className="group relative min-h-[620px] overflow-hidden border border-white/18 bg-[#08100d]">
+            <div className="grid gap-6 xl:grid-cols-[0.8fr_1.4fr_0.8fr]">
+              <article className="group relative min-h-[620px] overflow-hidden border border-white/14 bg-[#060b09]">
                 <video
-                  className="absolute inset-0 h-full w-full object-cover"
+                  className="absolute inset-0 h-full w-full object-cover opacity-70"
                   autoPlay
                   muted
                   loop
@@ -611,94 +604,78 @@ export default function Home() {
                     type="video/mp4"
                   />
                 </video>
-                <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(4,7,6,0.26),rgba(4,7,6,0.7),rgba(4,7,6,0.96))]" />
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(159,227,179,0.14),transparent_40%)]" />
+
+                <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(4,7,6,0.3),rgba(4,7,6,0.8),rgba(4,7,6,0.98))]" />
 
                 <div className="relative z-10 flex h-full flex-col justify-between p-6">
                   <div>
-                    <div className="inline-flex items-center gap-3 border border-[#9fe3b3]/18 bg-black/40 px-3 py-2 text-[10px] uppercase tracking-[0.24em] text-white/80">
-                      <span className="h-2 w-2 rounded-full bg-[#9fe3b3]" />
-                      Video Layer 01
-                    </div>
-                    <div className="mt-6 text-[10px] uppercase tracking-[0.28em] text-[#9fe3b3]">
+                    <div className="text-[10px] uppercase tracking-[0.28em] text-[#9fe3b3]">
                       External Threat Environment
                     </div>
-                    <h4 className="mt-3 max-w-sm text-2xl font-medium leading-tight text-white">
-                      Protection begins where the operator meets the field.
+                    <h4 className="mt-3 max-w-sm text-xl font-medium leading-tight text-white/90">
+                      Protection begins at exposure.
                     </h4>
                   </div>
 
-                  <div className="space-y-3">
-                    {leftProtectionPoints.map((item, index) => (
+                  <div className="space-y-3 text-sm text-white/78">
+                    {leftProtectionPoints.map((item) => (
                       <div
                         key={item}
-                        className="flex items-start gap-4 border border-white/12 bg-black/28 px-4 py-4 backdrop-blur-[2px]"
+                        className="border-b border-white/10 pb-2 last:border-b-0 last:pb-0"
                       >
-                        <span className="mt-0.5 text-[10px] uppercase tracking-[0.24em] text-[#9fe3b3]">
-                          {String(index + 1).padStart(2, "0")}
-                        </span>
-                        <p className="text-sm leading-7 text-white/82">{item}</p>
+                        {item}
                       </div>
                     ))}
                   </div>
                 </div>
               </article>
 
-              <article className="relative overflow-hidden border border-white/22 bg-[linear-gradient(180deg,rgba(10,18,15,0.98),rgba(7,12,10,0.98))] px-4 py-8 md:px-8">
-                <div className="pointer-events-none absolute left-1/2 top-0 h-full w-px -translate-x-1/2 bg-[linear-gradient(to_bottom,transparent,rgba(159,227,179,0.22),transparent)]" />
-                <div className="pointer-events-none absolute inset-x-0 top-[14%] h-px bg-[linear-gradient(to_right,transparent,rgba(159,227,179,0.08),transparent)]" />
-                <div className="pointer-events-none absolute inset-x-0 bottom-[14%] h-px bg-[linear-gradient(to_right,transparent,rgba(159,227,179,0.08),transparent)]" />
+              <article className="relative overflow-hidden border border-white/24 bg-[#07100d] px-6 py-10">
+                <div className="pointer-events-none absolute left-1/2 top-0 h-full w-px -translate-x-1/2 bg-[linear-gradient(to_bottom,transparent,rgba(159,227,179,0.25),transparent)]" />
 
                 <div className="relative z-20 mb-12 text-center">
                   <div className="text-[10px] uppercase tracking-[0.3em] text-[#9fe3b3]">
                     Full-Body Protection View
                   </div>
-                  <div className="mt-3 text-sm leading-7 text-white/62">
-                    PhantomFiber can be positioned across multiple interfaces of
-                    the deployed system, with protection logic extending from
-                    respiratory boundaries to textile, wound, and wear surfaces.
+                  <div className="mt-3 text-sm text-white/60">
+                    Protection architecture mapped across the operator system.
                   </div>
                 </div>
 
-                <div className="relative mx-auto min-h-[760px] w-full max-w-[760px]">
+                <div className="relative mx-auto min-h-[760px] flex items-center justify-center">
+                  <div className="relative w-full max-w-[460px]">
+                    <div className="absolute inset-0 bg-[radial-gradient(circle,rgba(159,227,179,0.16),transparent_65%)] blur-2xl" />
+
+                    <Image
+                      src="/assets/images/image_soldier_back_full_01.png"
+                      alt="Full-body PhantomFiber coverage map"
+                      width={640}
+                      height={1400}
+                      className="relative z-10 mx-auto w-full object-contain drop-shadow-[0_30px_60px_rgba(0,0,0,0.6)]"
+                      priority
+                    />
+                  </div>
+
                   {bodyCallouts.map((item) => (
                     <div
                       key={item.id}
-                      className={`absolute z-20 ${item.position} hidden md:block`}
+                      className={`pointer-events-none absolute z-20 ${item.position} hidden md:block`}
                     >
-                      <div
-                        className={`relative flex ${item.align} after:absolute after:h-px after:bg-[#9fe3b3]/34 ${item.line}`}
-                      >
-                        <div className="border border-white/12 bg-black/34 px-4 py-3 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.02)] backdrop-blur-[2px]">
+                      <div className={`relative flex ${item.align}`}>
+                        <div className="pointer-events-auto border border-white/12 bg-black/40 px-4 py-3 backdrop-blur-sm">
                           <div className="text-[10px] uppercase tracking-[0.24em] text-[#9fe3b3]">
                             {item.id}
                           </div>
                           <div className="mt-2 text-sm font-medium text-white">
                             {item.label}
                           </div>
-                          <div className="mt-1 text-xs leading-6 text-white/60">
+                          <div className="mt-1 text-xs text-white/60">
                             {item.detail}
                           </div>
                         </div>
                       </div>
                     </div>
                   ))}
-
-                  <div className="relative z-10 mx-auto flex min-h-[760px] items-center justify-center pt-24 pb-20">
-                    <div className="relative w-full max-w-[360px] md:max-w-[440px] xl:max-w-[500px]">
-                      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle,rgba(159,227,179,0.12),transparent_62%)] blur-2xl" />
-                      <div className="relative">
-                        <Image
-                          src="/assets/images/image_soldier_back_full_01.png"
-                          alt="Full-body soldier view for PhantomFiber protection mapping"
-                          width={640}
-                          height={1400}
-                          className="mx-auto h-auto w-full object-contain drop-shadow-[0_24px_40px_rgba(0,0,0,0.45)]"
-                          priority
-                        />
-                      </div>
-                    </div>
-                  </div>
                 </div>
 
                 <div className="mt-8 grid gap-3 md:hidden">
@@ -721,9 +698,9 @@ export default function Home() {
                 </div>
               </article>
 
-              <article className="group relative min-h-[620px] overflow-hidden border border-white/18 bg-[#08100d]">
+              <article className="group relative min-h-[620px] overflow-hidden border border-white/16 bg-[#08100d]">
                 <video
-                  className="absolute inset-0 h-full w-full object-cover"
+                  className="absolute inset-0 h-full w-full object-cover opacity-80"
                   autoPlay
                   muted
                   loop
@@ -735,34 +712,26 @@ export default function Home() {
                     type="video/mp4"
                   />
                 </video>
-                <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(4,7,6,0.26),rgba(4,7,6,0.7),rgba(4,7,6,0.96))]" />
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(194,161,74,0.1),transparent_42%)]" />
+
+                <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(4,7,6,0.25),rgba(4,7,6,0.75),rgba(4,7,6,0.96))]" />
 
                 <div className="relative z-10 flex h-full flex-col justify-between p-6">
                   <div>
-                    <div className="inline-flex items-center gap-3 border border-white/16 bg-black/40 px-3 py-2 text-[10px] uppercase tracking-[0.24em] text-white/80">
-                      <span className="h-2 w-2 rounded-full bg-[#c2a14a]" />
-                      Video Layer 02
+                    <div className="text-[10px] uppercase tracking-[0.28em] text-[#9fe3b3]">
+                      Interface Continuity
                     </div>
-                    <div className="mt-6 text-[10px] uppercase tracking-[0.28em] text-[#9fe3b3]">
-                      Interface + Material Continuity
-                    </div>
-                    <h4 className="mt-3 max-w-sm text-2xl font-medium leading-tight text-white">
-                      Protection continues through wear surfaces, contact
-                      layers, and integrated gear.
+                    <h4 className="mt-3 max-w-sm text-xl font-medium leading-tight text-white">
+                      Protection persists across wear surfaces and systems.
                     </h4>
                   </div>
 
-                  <div className="space-y-3">
-                    {rightProtectionPoints.map((item, index) => (
+                  <div className="space-y-3 text-sm text-white/80">
+                    {rightProtectionPoints.map((item) => (
                       <div
                         key={item}
-                        className="flex items-start gap-4 border border-white/12 bg-black/28 px-4 py-4 backdrop-blur-[2px]"
+                        className="border-b border-white/10 pb-2 last:border-b-0 last:pb-0"
                       >
-                        <span className="mt-0.5 text-[10px] uppercase tracking-[0.24em] text-[#9fe3b3]">
-                          {String(index + 4).padStart(2, "0")}
-                        </span>
-                        <p className="text-sm leading-7 text-white/82">{item}</p>
+                        {item}
                       </div>
                     ))}
                   </div>
