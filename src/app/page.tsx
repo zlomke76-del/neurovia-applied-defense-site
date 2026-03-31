@@ -970,17 +970,17 @@ export default function Home() {
                 </p>
 
                 <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-                  <button className="inline-flex items-center justify-center border border-[#9fe3b3]/46 bg-[#9fe3b3]/16 px-7 py-3 text-sm uppercase tracking-[0.18em] text-[#f2f6f3] transition hover:border-[#9fe3b3]/68 hover:bg-[#9fe3b3]/24">
-                    Initiate Contact
-                  </button>
+                  <a
+                    href="mailto:charlier@neuroviaapplieddefense.com,timz@neuroviadynamics.com?subject=Neurovia Applied Defense Inquiry&body=Please include:%0A- Organization%0A- Application area%0A- Timeline%0A"
+                    className="inline-flex items-center justify-center border border-[#9fe3b3]/46 bg-[#9fe3b3]/16 px-7 py-3 text-sm uppercase tracking-[0.18em] text-[#f2f6f3] transition hover:border-[#9fe3b3]/68 hover:bg-[#9fe3b3]/24"
+                  >
+                    Initiate Discussion →
+                  </a>
+
                   <button className="inline-flex items-center justify-center border border-white/18 bg-white/[0.04] px-7 py-3 text-sm uppercase tracking-[0.18em] text-white/84 transition hover:border-white/32 hover:text-white">
                     View System Brief
                   </button>
                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
         <footer className="border-t border-white/12">
           <div className="mx-auto flex w-full max-w-7xl flex-col gap-3 px-6 py-6 text-xs text-white/42 md:flex-row md:items-center md:justify-between">
