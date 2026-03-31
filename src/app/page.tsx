@@ -660,7 +660,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="relative mx-auto flex min-h-[660px] max-w-[560px] items-center justify-center">
+                <div className="relative mx-auto flex min-h-[760px] w-full max-w-[760px] items-center justify-center">
                   {bodyCallouts.map((item) => (
                     <div
                       key={item.id}
@@ -684,7 +684,7 @@ export default function Home() {
                     </div>
                   ))}
 
-                  <div className="relative w-full max-w-[260px] md:max-w-[300px] xl:max-w-[340px]">
+                  <div className="relative z-10 w-full max-w-[360px] md:max-w-[440px] xl:max-w-[500px]">
                     <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle,rgba(159,227,179,0.12),transparent_62%)] blur-2xl" />
                     <div className="relative">
                       <Image
@@ -692,7 +692,7 @@ export default function Home() {
                         alt="Full-body soldier view for PhantomFiber protection mapping"
                         width={640}
                         height={1400}
-                        className="h-auto w-full object-contain"
+                        className="mx-auto h-auto w-full object-contain drop-shadow-[0_24px_40px_rgba(0,0,0,0.45)]"
                         priority
                       />
                     </div>
