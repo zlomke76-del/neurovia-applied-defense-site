@@ -181,7 +181,7 @@ export default function Home() {
         "left-0 top-[18%] w-[28%] md:left-2 md:w-[22%] xl:left-4 xl:w-[20%]",
       align: "items-end text-right",
     },
-   {
+    {
       id: "02",
       label: "Torso Coverage",
       detail: "Protective textile layers across the chest and core",
@@ -237,11 +237,17 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="hidden items-center gap-6 text-[11px] uppercase tracking-[0.22em] text-white/52 md:flex">
-              <span>Systems</span>
-              <span>Applications</span>
-              <span>Deployment</span>
-            </div>
+            <nav className="hidden items-center gap-6 text-[11px] uppercase tracking-[0.22em] text-white/52 md:flex">
+              <a href="#systems" className="transition hover:text-white">
+                Systems
+              </a>
+              <a href="#applications" className="transition hover:text-white">
+                Applications
+              </a>
+              <a href="#deployment" className="transition hover:text-white">
+                Deployment
+              </a>
+            </nav>
           </div>
         </header>
 
@@ -275,9 +281,12 @@ export default function Home() {
                   Discuss Applications →
                 </a>
 
-                <button className="inline-flex items-center justify-center border border-white/18 bg-white/[0.03] px-6 py-3 text-sm uppercase tracking-[0.18em] text-white/82 transition hover:border-white/28 hover:bg-white/[0.05]">
+                <a
+                  href="#systems"
+                  className="inline-flex items-center justify-center border border-white/18 bg-white/[0.03] px-6 py-3 text-sm uppercase tracking-[0.18em] text-white/82 transition hover:border-white/28 hover:bg-white/[0.05]"
+                >
                   Learn More
-                </button>
+                </a>
               </div>
 
               <div className="mt-8 flex flex-wrap gap-x-5 gap-y-3 text-[11px] uppercase tracking-[0.24em] text-white/46">
@@ -383,7 +392,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="relative border-b border-white/12 px-6 py-20">
+        <section
+          id="systems"
+          className="relative border-b border-white/12 px-6 py-20"
+        >
           <div className="pointer-events-none absolute inset-y-0 left-1/2 hidden w-px -translate-x-1/2 bg-[linear-gradient(to_bottom,transparent,rgba(159,227,179,0.18),transparent)] xl:block" />
           <div className="mx-auto w-full max-w-7xl">
             <div className="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
@@ -455,7 +467,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="relative border-b border-white/12 px-6 py-20">
+        <section
+          id="applications"
+          className="relative border-b border-white/12 px-6 py-20"
+        >
           <div className="pointer-events-none absolute inset-y-0 left-1/2 hidden w-px -translate-x-1/2 bg-[linear-gradient(to_bottom,transparent,rgba(159,227,179,0.18),transparent)] xl:block" />
           <div className="mx-auto w-full max-w-7xl">
             <div className="mb-4 text-[10px] uppercase tracking-[0.3em] text-white/38">
@@ -531,7 +546,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="relative border-b border-white/12 px-6 py-20">
+        <section
+          id="deployment"
+          className="relative border-b border-white/12 px-6 py-20"
+        >
           <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(36,73,102,0.1),transparent_32%,transparent_68%,rgba(36,73,102,0.08))]" />
           <div className="pointer-events-none absolute inset-y-0 left-1/2 hidden w-px -translate-x-1/2 bg-[linear-gradient(to_bottom,transparent,rgba(124,178,214,0.16),transparent)] xl:block" />
           <div className="mx-auto w-full max-w-7xl">
@@ -550,9 +568,10 @@ export default function Home() {
               </div>
 
               <p className="max-w-xl text-sm leading-7 text-white/62 md:translate-y-2">
-                The sequence follows maritime deployment from shipboard environment,
-                to clinical control, to wearable protection systems where hygiene,
-                moisture exposure, repeat contact, and sustained readiness must hold together.
+                The sequence follows maritime deployment from shipboard
+                environment, to clinical control, to wearable protection systems
+                where hygiene, moisture exposure, repeat contact, and sustained
+                readiness must hold together.
               </p>
             </div>
 
@@ -951,7 +970,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="px-6 py-24">
+        <section id="engagement" className="px-6 py-24">
           <div className="mx-auto w-full max-w-7xl">
             <div className="border border-white/22 bg-[linear-gradient(135deg,rgba(159,227,179,0.1),rgba(255,255,255,0.03),rgba(194,161,74,0.1))] px-6 py-12 shadow-[0_0_0_1px_rgba(255,255,255,0.025),0_24px_70px_rgba(0,0,0,0.3)] md:px-10 md:py-16">
               <div className="max-w-4xl">
@@ -974,9 +993,12 @@ export default function Home() {
                   >
                     Initiate Discussion
                   </a>
-                  <button className="inline-flex items-center justify-center border border-white/18 bg-white/[0.04] px-7 py-3 text-sm uppercase tracking-[0.18em] text-white/84 transition hover:border-white/32 hover:text-white">
+                  <a
+                    href="#engagement"
+                    className="inline-flex items-center justify-center border border-white/18 bg-white/[0.04] px-7 py-3 text-sm uppercase tracking-[0.18em] text-white/84 transition hover:border-white/32 hover:text-white"
+                  >
                     View System Brief
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
